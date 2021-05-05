@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.tweet-container {
+  background-color: rgb(243, 239, 239);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 500px;
+  padding: 20px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-picture {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.header-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info {
+  margin-left: 10px;
+}
+
+.user-name {
+  font-size: 20px;
+  display: block;
+  margin-bottom: -5px;
+  font-weight: 800;
+}
+
+.user-id {
+  display: block;
+  font-size: 20px;
+  font-weight: 300px;
+  margin-bottom: 5px;
+}
+
+.twit-details {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.twit-text {
+  color: black;
+}
+
+.twit-tags {
+  color: #2e5fb4f2;
+}
+
+.feed-image {
+  overflow: hidden;
+  border-radius: 20px;
+  width: 100%;
+  height: 200px;
+}
+
+.time-container {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 100;
+  color: grey;
+  align-items: center;
+  font-size: 18px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey;
+}
+
+.footer {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  align-items: center;
+  display: flex;
+  margin-right: 30px;
+  color: grey;
+}
+
+.share-detail {
+  margin-left: 5px;
+  display: block;
+  font-size: 18px;
+  color: grey;
 }

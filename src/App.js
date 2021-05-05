@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Tweet from "./component/Tweet";
+
+import profile from "./assets/profile.jpg";
+import poster from "./assets/poster.jpg";
+
+const tweets = {
+  user: {
+    name: "Tommy Shelby",
+    id: "TOMMYOBE",
+    image: profile,
+  },
+  tweet: {
+    text: "By order of the Peaky Blinders.",
+    tags:
+      "#peakybliner #thomas #thommy #tommyshelby #obe #byorderofthepeakyblinder",
+    images: poster,
+    times: {
+      time: "10:25 PM",
+      date: "Sep 10, 2013",
+    },
+  },
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Tweet tweets={tweets} />
     </div>
   );
 }
